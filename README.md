@@ -2,7 +2,7 @@
 
 This project demonstrates how to use [Payload CMS](https://payloadcms.com/) for static site generation (SSG) while retaining an admin interface automatically provided by Payload. The admin interface is not part of the static site though and needs to be run locally.
 
-Currently this project uses a hack for static site generation that involves temporarily renaming the payload source folder so that it does not get included in the static build. Ideally a better solution should be possible...
+Currently this project uses a hack for static site generation that involves temporarily renaming the payload source folder so that it does not get included in the static build. Ideally a better solution should be possible and the feature requested at https://github.com/vercel/next.js/discussions/81242 could help with that.
 
 ## Usage
 
