@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Payload Static",
   description: "Basic Payload CMS static site example",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
