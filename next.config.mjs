@@ -16,4 +16,12 @@ if (isStaticMode) {
   nextConfig.pageExtensions.push("tsx", "ts", "jsx", "js");
 }
 
-export default withPayload(nextConfig);
+function withStaticPayload(nextConfig) {
+  if (isStaticMode) {
+    return nextConfig;
+  } else {
+    return withPayload(nextConfig);
+  }
+}
+
+export default withStaticPayload(nextConfig);
