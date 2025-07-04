@@ -2,7 +2,7 @@
 
 This project demonstrates how to use [Payload CMS](https://payloadcms.com/) for static site generation (SSG) while retaining an admin interface automatically provided by Payload. The admin interface is not part of the static site though and needs to be run locally.
 
-Currently this project uses a hack for static site generation that involves temporarily renaming the payload source folder so that it does not get included in the static build. Ideally a better solution should be possible...
+This project leverages Next.js's "pageExtensions" setting to selectively include only specific files during a "static build" based on their file extensions. This means that files which will form part of the static site need to have `.static.tsx` as their extension instead of the regular `.tsx`. This is needed to avoid dynamic Payload pages being pulled into the static build and causing errors.
 
 ## Usage
 

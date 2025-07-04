@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "build:static": "tsx scripts/build-static.ts",
+    "build:static": "cross-env BUILD_MODE=static next build",
     "start": "next start",
     "lint": "next lint",
     "payload": "payload",
